@@ -1,0 +1,21 @@
+api_version = "ukbgpt/v1alpha1"
+kind = "model_deployment"
+role = "llm"
+model_family = "model.llm.openai_gpt_oss_120b"
+gpu_architecture = "nvidia_ampere"
+router = "auto"
+
+[worker_defaults]
+tensor_parallel_size = 2
+
+[[workers]]
+gpus = [0, 1]
+
+[[workers]]
+gpus = [2, 3]
+
+[[workers]]
+gpus = [4, 5]
+
+[[workers]]
+gpus = [6, 7]
