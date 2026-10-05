@@ -1,0 +1,13 @@
+httpx
+matplotlib
+numpy
+openai
+openpyxl
+pandas
+pydantic>=2,<3
+python-dotenv
+scikit-learn
+scipy
+seaborn
+tabulate
+tqdm
